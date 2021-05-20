@@ -39,5 +39,6 @@ Test
 Give it a quick test run with the help of the included `test.json` file
 
 ```
-ACG_CONFIG="test.json" isClowderEnabled && ClowderConfigWebPort
+$ ( ACG_CONFIG="test.json";  isClowderEnabled && ClowderConfigWebPort )
+
 ```
