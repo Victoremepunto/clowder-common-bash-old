@@ -5,13 +5,20 @@ Simple client access helper functions for the configuration for the Clowder oper
 
 **Please note** this is a work in progress and it's in a very early stage, function names, output format, and structure of returned data is likely to change
 
+Prerequisites
+-------------
+
+[jq](https://stedolan.github.io/jq) is required to extract data (however it is not required to detect whether if the ClowderEnvironment is active or not.
+
+Bash version >= 4 is **recommended** as future releases will make use of hashmaps
+
 Usage
 -----
 
-To access the different configuration, load the `main` file in your shell
+To access the different configuration, load the `clowder-config-main` file in your shell
 
 ```
-curl -o https://raw.githubusercontent.com/Victoremepunto/clowder-common-bash/master/main >> clowder-config-main && source clowder-config-main
+curl -o https://raw.githubusercontent.com/Victoremepunto/clowder-common-bash/master/clowder-config-main >> clowder-config-main && source clowder-config-main
 ```
 
 Then try and run some commands:
