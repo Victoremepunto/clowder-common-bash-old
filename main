@@ -47,3 +47,11 @@ ClowderConfigWebPort() {
 ClowderConfigMetricsPort() {
     _getClowderValueIfClowderEnabled 'metricsPort'
 }
+
+ClowderConfigPrivatePort() {
+    _getClowderValueIfClowderEnabled 'privatePort'
+}
+
+ClowderConfigPublicPort() {
+    _getClowderValueIfClowderEnabled 'publicPort'
+}
